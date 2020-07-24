@@ -38,3 +38,16 @@ def append_colors(pigeon_list, data)
     }
   }
 end
+
+def append_genders(pigeon_list, data)
+  color=""
+  data.each{ |el_key, el_value|
+    #binding.pry
+    el_value.each {|color_as_key, names|
+      color = color_as_key.to_s
+      names.each{ |name|
+        pigeon_list[name][:color].push(color)
+      }
+    }
+  }
+end
