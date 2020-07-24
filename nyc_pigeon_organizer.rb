@@ -27,7 +27,6 @@ def collect_names(data)
 end
 
 def append_data(pigeon_list, data)
-  binding.pry
   data.each{ |el_key, el_value|
     case el_key
     when :color
