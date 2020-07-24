@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
   
   append_data(pigeon_list, data)
   
-  binding.pry
+  pigeon_list
 end
 
 def collect_names(data)
