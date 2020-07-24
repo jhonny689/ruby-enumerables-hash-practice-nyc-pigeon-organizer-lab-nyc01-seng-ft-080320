@@ -35,7 +35,6 @@ def append_colors(pigeon_list, data)
       names.each{ |name|
         pigeon_list[name][:color].push(color)
       }
-      binding.pry
     }
   }
 end
