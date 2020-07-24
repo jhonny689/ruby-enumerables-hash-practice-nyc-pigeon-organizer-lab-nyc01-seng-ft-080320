@@ -30,6 +30,7 @@ def append_data(pigeon_list, data)
   data.each{ |el_key, el_value|
     if el_key == :color
       append_color(pigeon_list, el_value)
+    else
 end
 
 def append_colors(pigeon_list, data)
