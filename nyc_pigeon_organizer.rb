@@ -28,8 +28,10 @@ end
 
 def append_data(pigeon_list, data)
   data.each{ |el_key, el_value|
-    case el_key == :color
+    case el_key
+    when :color
       append_color(pigeon_list, el_value)
+      whe
     else
 end
 
