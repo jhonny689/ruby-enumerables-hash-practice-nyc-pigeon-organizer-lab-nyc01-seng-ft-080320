@@ -30,11 +30,11 @@ def append_data(pigeon_list, data)
   data.each{ |el_key, el_value|
     case el_key
     when :color
-      append_color(pigeon_list, el_value)
+      append_colors(pigeon_list, el_value)
     when :gender
-      append_gender(pigeon_list, el_value)
+      append_genders(pigeon_list, el_value)
     when :lives
-      append_habitat(pigeon_list, el_value)
+      append_habitats(pigeon_list, el_value)
     else
       puts "note that #{el_value} weren't mapped"
     end
@@ -52,20 +52,20 @@ end
 
 def append_genders(pigeon_list, data)
   gender=""
-  el_value.each {|color_as_key, names|
-    color = color_as_key.to_s
+  el_value.each {|gender_as_key, names|
+    gender = gender_as_key.to_s
     names.each{ |name|
       pigeon_list[name][:gender].push(gender)
     }
   }
 end
 
-def append_genders(pigeon_list, data)
-  gender=""
-  el_value.each {|color_as_key, names|
-    color = color_as_key.to_s
+def append_habitats(pigeon_list, data)
+  habitat=""
+  el_value.each {|habitat_as_key, names|
+    habitat = habitat_as_key.to_s
     names.each{ |name|
-      pigeon_list[name][:gender].push(gender)
+      pigeon_list[name][:lives].push(habitat)
     }
   }
 end
