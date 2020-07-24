@@ -31,7 +31,10 @@ def append_data(pigeon_list, data)
     case el_key
     when :color
       append_color(pigeon_list, el_value)
-      whe
+    when :gender
+      append_gender(pigeon_list, el_value)
+    when :lives
+      append_lives(pigeon_list, el_value)
     else
 end
 
