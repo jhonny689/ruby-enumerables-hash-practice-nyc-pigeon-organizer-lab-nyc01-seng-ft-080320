@@ -53,7 +53,7 @@ end
 
 def append_genders(pigeon_list, data)
   gender=""
-  el_value.each {|gender_as_key, names|
+  data.each {|gender_as_key, names|
     gender = gender_as_key.to_s
     names.each{ |name|
       pigeon_list[name][:gender].push(gender)
@@ -63,7 +63,7 @@ end
 
 def append_habitats(pigeon_list, data)
   habitat=""
-  el_value.each {|habitat_as_key, names|
+  data.each {|habitat_as_key, names|
     habitat = habitat_as_key.to_s
     names.each{ |name|
       pigeon_list[name][:lives].push(habitat)
