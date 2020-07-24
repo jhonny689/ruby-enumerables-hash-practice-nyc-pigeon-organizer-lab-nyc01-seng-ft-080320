@@ -38,6 +38,7 @@ def append_data(pigeon_list, data)
     else
       puts "note that #{el_value} weren't mapped"
     end
+  }
 end
 
 def append_colors(pigeon_list, data)
